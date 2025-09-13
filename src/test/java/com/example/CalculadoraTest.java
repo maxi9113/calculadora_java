@@ -57,4 +57,10 @@ class CalculadoraTest {
     void testSumaRecursivaConOtroValorNegativo() {
         assertThrows(IllegalArgumentException.class, () -> calc.sumaRecursiva(-100));
     }
+
+    @Test
+    @DisplayName("Prueba para un valor positivo adicional (11)")
+    void testSumaRecursivaConValorOnce() {
+        assertEquals(66, calc.sumaRecursiva(11));
+    }
 }
